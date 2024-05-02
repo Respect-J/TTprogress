@@ -24,7 +24,7 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="BACK_END FOR Технопром",
+        title="BACK_END FOR TTprogress",
         default_version="v1",
         description="НУРИК СПЕЦИАЛЬНО ДЛЯ ТЕБЯ СДЕЛАЛ СВАГЕР",
         terms_of_service="https://www.yourapp.com/terms/",
@@ -42,7 +42,8 @@ admin.site.index_title = "Добро пожаловать в администр�
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact/', include('apps.main.urls')),
+    path('main/', include('apps.main.urls')),
+    path('service/', include('apps.service.urls')),
 
     re_path(r"^swagger(?P<format>\.json|\.yaml)$", schema_view.without_ui(cache_timeout=0), name="schema-json"),
     re_path(r"^swagger/$", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
