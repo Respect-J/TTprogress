@@ -12,8 +12,6 @@ class Contacts(BaseModel):
 
 class Certificates(BaseModel):
     name_ru = models.CharField(max_length=256, null=True, blank=True)
-    name_en = models.CharField(max_length=256, null=True, blank=True)
-    name_uz = models.CharField(max_length=256, null=True, blank=True)
     img = models.FileField(upload_to="img/certificates/", null=True, blank=True)
 
     def __str__(self):

@@ -1,6 +1,5 @@
 from rest_framework import serializers
-
-from .models import Service, SingleService
+from .models import Service, SingleService, PlanVip, PlanStandart
 
 
 class ServiceSerializer(serializers.ModelSerializer):
@@ -15,3 +14,13 @@ class SingleServiceSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class PlanVipSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PlanVip
+        fields = "__all__"
+
+
+class PlanStandartSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PlanStandart
+        fields = "__all__"
