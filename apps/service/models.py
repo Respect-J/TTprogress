@@ -16,6 +16,8 @@ class Service(models.Model):
 class SingleService(BaseModel):
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     name_ru = models.CharField(max_length=256, null=True, blank=True)
+    name_en = models.CharField(max_length=256, null=True, blank=True)
+    name_uz = models.CharField(max_length=256, null=True, blank=True)
     description_uz = models.TextField(null=True, blank=True)
     description_ru = models.TextField(null=True, blank=True)
     description_en = models.TextField(null=True, blank=True)
@@ -28,6 +30,8 @@ class SingleService(BaseModel):
 class Plan(BaseModel):
     single = models.ForeignKey(SingleService, on_delete=models.CASCADE)
     name_ru = models.CharField(max_length=256, null=True, blank=True)
+    name_en = models.CharField(max_length=256, null=True, blank=True)
+    name_uz = models.CharField(max_length=256, null=True, blank=True)
     description_uz = models.TextField(null=True, blank=True)
     description_ru = models.TextField(null=True, blank=True)
     description_en = models.TextField(null=True, blank=True)
