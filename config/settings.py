@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-j(7-*pntzyb(j_z9h6(t5dl!xkdnjj1-0!_i77=oecb@^kv=hx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['tt.back-texnoprom.uz']
@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "drf_yasg",
-    'main',
-    'service'
+    'apps.main',
+    'apps.service'
 
 ]
 
