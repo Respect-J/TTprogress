@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-j(7-*pntzyb(j_z9h6(t5dl!xkdnjj1-0!_i77=oecb@^kv=hx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['tt.back-texnoprom.uz']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['tt.back-texnoprom.uz']
 
 
 # Application definition
@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "drf_yasg",
     'apps.main',
-    'apps.service'
+    'apps.service',
+    'apps.users'
 
 ]
 
@@ -159,5 +160,5 @@ STATIC_URL = "static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 MEDIA_URL = "media/"
-# MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_ROOT = "/home/backtexn/tt.back-texnoprom.uz/media"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+# MEDIA_ROOT = "/home/backtexn/tt.back-texnoprom.uz/media"
