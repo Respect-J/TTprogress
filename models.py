@@ -1,6 +1,11 @@
 import uuid
-from django.utils import timezone
 from django.db import models
+
+
+class Language(models.IntegerChoices):
+    UNKNOWN = 0
+    UZ = 1
+    RU = 2
 
 
 class BaseModel(models.Model):

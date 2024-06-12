@@ -47,7 +47,7 @@ class Hero(BaseModel):
     title_sub_uz = models.CharField(max_length=1024, null=True, blank=True)
     title_top_ru = models.CharField(max_length=1024, null=True, blank=True)
     title_bottom_ru = models.CharField(max_length=1024, null=True, blank=True)
-    title_sub_uru = models.CharField(max_length=1024, null=True, blank=True)
+    title_sub_ru = models.CharField(max_length=1024, null=True, blank=True)
     title_top_en = models.CharField(max_length=1024, null=True, blank=True)
     title_bottom_en = models.CharField(max_length=1024, null=True, blank=True)
     title_sub_en = models.CharField(max_length=1024, null=True, blank=True)

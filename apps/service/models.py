@@ -35,6 +35,7 @@ class Plan(BaseModel):
     description_uz = models.TextField(null=True, blank=True)
     description_ru = models.TextField(null=True, blank=True)
     description_en = models.TextField(null=True, blank=True)
+    price = models.CharField(max_length=512, null=True, blank=True)
 
     def __str__(self):
         return self.name_ru
