@@ -43,8 +43,10 @@ INSTALLED_APPS = [
     "corsheaders",
     "drf_yasg",
     'apps.main',
+    'apps.users',
+    'apps.pdf',
     'apps.service',
-    'apps.users'
+
 
 ]
 
